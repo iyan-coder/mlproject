@@ -1,0 +1,129 @@
+/* Background and overall container */
+body {
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffffdd; /* white with slight transparency */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  width: 350px;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* Select and range inputs */
+select, input[type="range"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #a8dadc;
+  border-radius: 6px;
+  background-color: #f1f9fb;
+  font-size: 15px;
+  color: #2c3e50;
+  transition: border-color 0.3s ease;
+}
+
+/* On focus */
+select:focus, input[type="range"]:focus {
+  outline: none;
+  border-color: #1d3557;
+  background-color: #eaf4f9;
+}
+
+/* Range slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 6px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #457b9d;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  margin-top: -7px;
+  transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #1d3557;
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #457b9d;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #1d3557;
+}
+
+/* Value display next to range sliders */
+span {
+  font-weight: 600;
+  margin-left: 8px;
+  color: #1d3557;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #1d3557;
+  color: #f1faee;
+  border: none;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #457b9d;
+}
+
+/* Result area */
+#result {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 20px;
+  color: #1d3557;
+  font-weight: 700;
+}
