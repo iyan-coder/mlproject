@@ -56,8 +56,3 @@ class DataIngestion:
         # If any error occurs, raise a custom error with traceback info
         except Exception as e:
             raise CustomException(e, sys)
-
-# This ensures the ingestion runs when this file is executed directly
-if __name__ == "__main__":
-    obj = DataIngestion()
-    obj.initiate_data_ingestion()
